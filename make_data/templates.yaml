@@ -1,0 +1,7 @@
+loan_quiz_gen:
+  question: "LOANWORD의 순화어로 알맞은 것은?"
+standard_quiz_gen:
+  question: "\"STANDARD\"을 의미하는 단어로 알맞은 것은?"
+  change_question: "다음 중 \"STANDARD\"의 동의어는?"
+domain_quiz_gen:
+  question: ""
