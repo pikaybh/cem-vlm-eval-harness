@@ -548,7 +548,6 @@ class VisionQuizGenerator(QuizGenerator):
         quizzes = self.generate_all_quizzes()
         rows = [
             {
-                "Vision Encoder": quiz["vision"],
                 "Question": quiz["question"],
                 "Figure": quiz["image"],
                 "Explanation": quiz["explanation"],
@@ -556,6 +555,8 @@ class VisionQuizGenerator(QuizGenerator):
                 "Field": quiz["field"],
                 "Test": quiz["name"],
                 "Date": quiz["date"],
+                "Subject": quiz["subject"],
+                "Vision Encoder": quiz["vision"],
                 "Answer": quiz["answer"]["text"],
                 "Answer Key": quiz["answer"]["key"],
                 **{chr(65 + idx): option for idx, option in enumerate(quiz["options"]["text"])}
